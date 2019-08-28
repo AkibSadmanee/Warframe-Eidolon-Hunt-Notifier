@@ -22,6 +22,6 @@ if __name__ == "__main__":
     elif len(timeLeft) == 1:
         timeLeftSec = int(timeLeft[0][:-1])
     
-    notifylim = 6
+    notifylim = int(input("How minutes prior do you need the notification? :"))
     timeLeftSec -= notifylim*60
     startstopwatch(timeLeftSec,time,sleep,read,notifylim)
