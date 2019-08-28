@@ -7,7 +7,6 @@ sys.path.append("./Methods/")
 
 from timer_x import startstopwatch
 from txt2speech import read
-from progress import printProgressBar
 
 if __name__ == "__main__":
     resp = requests.get(url='https://api.warframestat.us/pc/cetusCycle', params=dict())
